@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad_btn-030" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </radialGradient>
+    <linearGradient id="metalBezel_btn-030" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Bezel Container -->
+  <rect x="6" y="6" width="188" height="168" rx="14" fill="url(#metalBezel_btn-030)" stroke="#334155" stroke-width="2"/>
+  <rect x="12" y="12" width="176" height="156" rx="10" fill="url(#bgGrad_btn-030)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.3"/>
+  
+  <!-- Technical Grid Sub-lines -->
+  <line x1="14" y1="35" x2="186" y2="35" stroke="#334155" stroke-width="1" opacity="0.4"/>
+  <line x1="14" y1="145" x2="186" y2="145" stroke="#334155" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Code Badge & Status LED -->
+  <circle cx="26" cy="24" r="4" fill="#22C55E"/>
+  <text x="38" y="27" font-family="monospace" font-weight="900" font-size="10" fill="#94A3B8" letter-spacing="1">CODELCO • EVT-30</text>
+  
+  <!-- Main High-Contrast Vector Graphic -->
+  <g transform="translate(0, 0)">
+    <circle cx="100" cy="90" r="42" fill="none" stroke="#0284C7" stroke-width="6"/><path d="M100,90 C90,70 110,50 100,50 C90,50 85,75 100,90 Z" fill="#38BDF8"/><path d="M100,90 C120,80 140,100 140,90 C140,80 115,75 100,90 Z" fill="#38BDF8"/><path d="M100,90 C110,110 90,130 100,130 C110,130 115,105 100,90 Z" fill="#38BDF8"/><path d="M100,90 C80,100 60,80 60,90 C60,100 85,105 100,90 Z" fill="#38BDF8"/><circle cx="100" cy="90" r="10" fill="#0284C7"/>
+  </g>
+  
+  <!-- Bottom Label in SVG -->
+  <text x="100" y="160" font-family="system-ui, sans-serif" font-weight="800" font-size="9" fill="#E2E8F0" text-anchor="middle" letter-spacing="0.5">EMBRAGUE DE VENTILADOR DE </text>
+</svg>

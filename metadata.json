@@ -1,0 +1,6 @@
+{
+  "name": "Panel de Control CODELCO",
+  "description": "Sistema interactivo de identificación de alarmas de cabina para camiones CAEX de alto tonelaje CODELCO.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

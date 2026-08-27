@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="codelcoOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7300" />
+      <stop offset="100%" stop-color="#D95300" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  <!-- Icon / Symbol: 3 interlocking segments forming modern Codelco geometric C -->
+  <g transform="translate(10, 10)">
+    <!-- Segment 1 -->
+    <path d="M 50 10 A 40 40 0 0 0 10 50 L 30 50 A 20 20 0 0 1 50 30 Z" fill="#E65100" />
+    <!-- Segment 2 -->
+    <path d="M 10 50 A 40 40 0 0 0 50 90 L 50 70 A 20 20 0 0 1 30 50 Z" fill="#F57C00" />
+    <!-- Segment 3 -->
+    <path d="M 50 90 A 40 40 0 0 0 90 50 L 70 50 A 20 20 0 0 1 50 70 Z" fill="#FF9800" />
+    <!-- Center block -->
+    <circle cx="50" cy="50" r="12" fill="#E65100" />
+  </g>
+  <!-- Wordmark CODELCO -->
+  <text x="120" y="68" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="44" fill="#1E293B" letter-spacing="3">CODELCO</text>
+  <text x="122" y="88" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="12" fill="#E65100" letter-spacing="4">ORGULLO DE TODOS</text>
+</svg>
