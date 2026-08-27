@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { CodelcoButton, CodelcoPanel, ButtonIcon, ButtonDatosTecnicos } from '../types';
 import ButtonIconRenderer, { POPULAR_LUCIDE_ICONS } from './ButtonIconRenderer';
+import { resolveAssetUrl } from '../utils/assets';
 import { 
   Search, Plus, Copy, Trash2, ArrowUp, ArrowDown, Save, X, Eye, 
   Upload, Sparkles, Check, AlertTriangle, HelpCircle, Layers, Settings, FileText, ChevronUp, ChevronDown, Move,
@@ -805,7 +806,7 @@ export default function VisualEditor({
             </div>
             {panelConfig.logo && (
               <div className="h-20 p-3 bg-white rounded-xl flex items-center justify-center overflow-hidden">
-                <img src={panelConfig.logo} alt={panelConfig.empresa} className="max-w-full max-h-full object-contain" />
+                <img src={resolveAssetUrl(panelConfig.logo)} alt={panelConfig.empresa} className="max-w-full max-h-full object-contain" />
               </div>
             )}
           </div>
@@ -1549,7 +1550,7 @@ export default function VisualEditor({
                         {getButtonImageUrl(selectedButton.imagen) ? (
                           <>
                             <img
-                              src={getButtonImageUrl(selectedButton.imagen)}
+                              src={resolveAssetUrl(getButtonImageUrl(selectedButton.imagen))}
                               alt="Button graphic"
                               style={{
                                 width: `${getButtonImageSize(selectedButton.imagen)}%`,

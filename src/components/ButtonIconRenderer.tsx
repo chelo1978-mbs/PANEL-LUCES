@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Icons from 'lucide-react';
+import { resolveAssetUrl } from '../utils/assets';
 
 export type IconType = 'lucide' | 'emoji' | 'svg' | 'png' | 'url';
 
@@ -72,7 +73,7 @@ export default function ButtonIconRenderer({
         }}
       >
         <img
-          src={valor || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>'}
+          src={resolveAssetUrl(valor) || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>'}
           alt="Button Icon"
           className="w-full h-full object-contain rounded"
           referrerPolicy="no-referrer"

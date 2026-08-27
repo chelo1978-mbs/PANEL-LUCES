@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { CodelcoButton } from '../types';
+import { resolveAssetUrl } from '../utils/assets';
 import { AlertTriangle, Calendar, Info, ArrowLeft, Settings, HelpCircle, FileText } from 'lucide-react';
 
 interface InfoCardProps {
@@ -69,7 +70,7 @@ export default function InfoCard({ button, onClose }: InfoCardProps) {
           return (
             <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-sky-200 bg-slate-950 flex items-center justify-center group">
               <img
-                src={imageUrl}
+                src={resolveAssetUrl(imageUrl)}
                 alt={button.nombre}
                 style={{
                   width: imageSize ? `${imageSize}%` : '100%',

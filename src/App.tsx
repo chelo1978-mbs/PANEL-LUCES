@@ -7,6 +7,7 @@ import PanelViewer from './components/PanelViewer';
 import InfoCard from './components/InfoCard';
 import VisualEditor from './components/VisualEditor';
 import { Pencil, Shield } from 'lucide-react';
+import { resolveAssetUrl } from './utils/assets';
 
 const DEFAULT_PANEL: CodelcoPanel = {
   filas: 5,
@@ -48,12 +49,12 @@ function CodelcoLogo({ src, empresa, className = "" }: { src: string; empresa: s
   return (
     <div className={`flex items-center ${className}`} id="codelco-logo">
       <img
-        src={src || '/logos/codelco.svg'}
+        src={resolveAssetUrl(src || '/logos/codelco.svg')}
         alt={empresa || 'CODELCO'}
         className="h-10 sm:h-12 w-auto object-contain"
         referrerPolicy="no-referrer"
         onError={(e) => {
-          (e.target as HTMLImageElement).src = '/logos/codelco.svg';
+          (e.target as HTMLImageElement).src = resolveAssetUrl('/logos/codelco.svg');
         }}
       />
     </div>
